@@ -260,6 +260,20 @@ def load_model() -> HemoVisionBoundedTCN:
     if not CHECKPOINT_PATH.exists():
         raise FileNotFoundError(f"Checkpoint not found: {CHECKPOINT_PATH}")
 
+    # If Git LFS pointer was downloaded instead of binary weights (~130 bytes), auto-fetch real weights
+    if CHECKPOINT_PATH.stat().st_size < 2048:
+        try:
+            with open(CHECKPOINT_PATH, "r", errors="ignore") as f:
+                first_line = f.readline()
+            if "git-lfs" in first_line or first_line.startswith("version"):
+                print("[!] Detected Git LFS pointer file. Downloading real model weights (1.1MB)...")
+                import urllib.request
+                url = "https://media.githubusercontent.com/media/Ayanmishra11/HemoVision/main/data/vitalscan-clinic/MCD-rPPG/hemovision_bounded_tcn_best.pt"
+                urllib.request.urlretrieve(url, CHECKPOINT_PATH)
+                print("[+] Successfully downloaded full model weights!")
+        except Exception as e:
+            print(f"[!] Warning: Could not auto-download model weights: {e}")
+
     checkpoint = torch.load(CHECKPOINT_PATH, map_location=DEVICE, weights_only=False)
     model = HemoVisionBoundedTCN().to(DEVICE)
     model.load_state_dict(checkpoint["model_state_dict"], strict=True)
