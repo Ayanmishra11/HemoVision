@@ -1,0 +1,5 @@
+Method,Type,MAE (BPM),RMSE (BPM),Pearson r
+GREEN Baseline,Classical Signal,31.45,38.2,0.082
+CHROM Baseline,Classical Signal,29.8,36.15,0.112
+POS Baseline,Classical Signal,28.12,34.8,0.134
+HemoVisionUNet1D (Ours),Deep 1D U-Net,26.65648651123047,33.113468170166016,0.15031126141548157

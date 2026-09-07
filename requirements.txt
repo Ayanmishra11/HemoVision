@@ -1,0 +1,14 @@
+# Core Deep Learning & Computer Vision
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0.76
+mediapipe==0.10.14
+
+# Scientific Computing & Data (NumPy 1.x required for mediapipe/PyTorch compatibility)
+numpy>=1.24.3,<2.0.0
+scipy>=1.11.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# Web Application & Dashboard
+streamlit>=1.32.0

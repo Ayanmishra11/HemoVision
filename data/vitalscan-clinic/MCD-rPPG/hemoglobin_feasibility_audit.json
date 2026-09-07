@@ -1,0 +1,60 @@
+{
+  "target": "hemoglobin",
+  "joined_recordings": 3427,
+  "split_distribution": {
+    "train": {
+      "n": 2387,
+      "mean": 13.722832006702975,
+      "std": 1.6293297389586312,
+      "min": 8.1,
+      "p05": 11.3,
+      "median": 13.6,
+      "p95": 16.36999999999998,
+      "max": 17.3
+    },
+    "val": {
+      "n": 517,
+      "mean": 13.320696324951644,
+      "std": 1.7108079178464166,
+      "min": 8.2,
+      "p05": 10.58,
+      "median": 13.3,
+      "p95": 15.8,
+      "max": 16.9
+    },
+    "test": {
+      "n": 523,
+      "mean": 13.425430210325048,
+      "std": 1.7173235981409258,
+      "min": 9.3,
+      "p05": 10.81,
+      "median": 13.2,
+      "p95": 16.7,
+      "max": 17.1
+    }
+  },
+  "session_label_repetition": {
+    "sessions": 1153,
+    "exact_repeat_fraction": 1.0,
+    "max_within_session_range": 0.0
+  },
+  "heldout_non_video_baselines": {
+    "train_mean": {
+      "mae": 1.4171790153964952,
+      "pearson_r": NaN
+    },
+    "state_only": {
+      "mae": 1.4172953840237612,
+      "pearson_r": -0.017508522670583535
+    },
+    "camera_only": {
+      "mae": 1.4170922374250359,
+      "pearson_r": 0.004156925681556399
+    },
+    "demographic_context_ols": {
+      "mae": 0.9531979424401246,
+      "pearson_r": 0.7002816542444679
+    }
+  },
+  "skin_tone_proxy_available": false
+}

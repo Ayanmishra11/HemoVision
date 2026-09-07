@@ -1,0 +1,36 @@
+{
+  "pearson_r": 0.2846423089504242,
+  "hr_mae_bpm": 8.974172592163086,
+  "hr_rmse_bpm": 18.34956169128418,
+  "per_task_mae": {
+    "pulse": 14.327041625976562,
+    "respiratory": 1.4523204565048218,
+    "saturation": 0.8373330235481262,
+    "upper_ap": 12.731228828430176,
+    "lower_ap": 7.595267295837402,
+    "hemoglobin": 1.3497393131256104,
+    "glycated_hemoglobin": 0.34166261553764343,
+    "cholesterol": 0.6531310677528381,
+    "rigidity": 2.0311949253082275,
+    "stress": 1.081221103668213,
+    "bmi": 3.1023480892181396
+  },
+  "per_task_valid_count": {
+    "pulse": 520,
+    "respiratory": 520,
+    "saturation": 520,
+    "upper_ap": 520,
+    "lower_ap": 520,
+    "hemoglobin": 520,
+    "glycated_hemoglobin": 520,
+    "cholesterol": 520,
+    "rigidity": 520,
+    "stress": 520,
+    "bmi": 520
+  },
+  "tier_mae": {
+    "established": 5.538898368676503,
+    "moderate": 10.163248062133789,
+    "exploratory": 1.4265495191017787
+  }
+}

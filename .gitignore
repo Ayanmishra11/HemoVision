@@ -1,0 +1,61 @@
+# =============================================================================
+# Python Environments & Caches
+# =============================================================================
+.venv/
+.venv*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.ipynb_checkpoints/
+
+# =============================================================================
+# IDE, OS, & AI Agent Metadata
+# =============================================================================
+.agents/
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+temp_pptx_imgs/
+hhth1_preview/
+
+# =============================================================================
+# Datasets & Heavy Assets
+# =============================================================================
+mcd_rppg.zip
+mcd_rppg/
+data/MCD-rPPG/
+data/vitalscan-clinic/MCD-rPPG/.cache/
+data/vitalscan-clinic/MCD-rPPG/cached_rois/
+data/vitalscan-clinic/MCD-rPPG/checkpoints_v2/
+data/vitalscan-clinic/MCD-rPPG/ecg/
+data/vitalscan-clinic/MCD-rPPG/ecg_processed/
+data/vitalscan-clinic/MCD-rPPG/meta/
+data/vitalscan-clinic/MCD-rPPG/ppg/
+data/vitalscan-clinic/MCD-rPPG/rois_v2/
+data/vitalscan-clinic/MCD-rPPG/temp_cache/
+
+# Ignore massive 130 GB video directory EXCEPT sample test clips
+data/vitalscan-clinic/MCD-rPPG/video/*
+!data/vitalscan-clinic/MCD-rPPG/video/1107_FullHDwebcam_before.avi
+!data/vitalscan-clinic/MCD-rPPG/video/1107_FullHDwebcam_after.avi
+!data/vitalscan-clinic/MCD-rPPG/video/1314_FullHDwebcam_before.avi
+!data/vitalscan-clinic/MCD-rPPG/video/1362_FullHDwebcam_before.avi
+
+# Ignore massive 217 MB ppg_sync directory EXCEPT ground truth for sample test clips
+data/vitalscan-clinic/MCD-rPPG/ppg_sync/*
+!data/vitalscan-clinic/MCD-rPPG/ppg_sync/1107_FullHDwebcam_before.txt
+!data/vitalscan-clinic/MCD-rPPG/ppg_sync/1107_FullHDwebcam_after.txt
+!data/vitalscan-clinic/MCD-rPPG/ppg_sync/1314_FullHDwebcam_before.txt
+!data/vitalscan-clinic/MCD-rPPG/ppg_sync/1362_FullHDwebcam_before.txt
+
+# Ignore secondary/intermediate experiment checkpoints (keep the production bounded TCN)
+data/vitalscan-clinic/MCD-rPPG/*.pth
+data/vitalscan-clinic/MCD-rPPG/*.pt
+!data/vitalscan-clinic/MCD-rPPG/hemovision_bounded_tcn_best.pt

@@ -1,0 +1,576 @@
+[
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1020_FullHDwebcam_after_roi.pt",
+    "subject_id": "1020",
+    "condition": "after",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5383)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1020_FullHDwebcam_before_roi.pt",
+    "subject_id": "1020",
+    "condition": "before",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5382)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1020_IriunWebcam_after_roi.pt",
+    "subject_id": "1020",
+    "condition": "after",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4289)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1020_IriunWebcam_before_roi.pt",
+    "subject_id": "1020",
+    "condition": "before",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4310)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1020_USBVideo_after_roi.pt",
+    "subject_id": "1020",
+    "condition": "after",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5377)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1020_USBVideo_before_roi.pt",
+    "subject_id": "1020",
+    "condition": "before",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5376)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1024_FullHDwebcam_after_roi.pt",
+    "subject_id": "1024",
+    "condition": "after",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5361)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1024_FullHDwebcam_before_roi.pt",
+    "subject_id": "1024",
+    "condition": "before",
+    "camera_type": "FullHDwebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5364)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1024_IriunWebcam_after_roi.pt",
+    "subject_id": "1024",
+    "condition": "after",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4308)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1024_IriunWebcam_before_roi.pt",
+    "subject_id": "1024",
+    "condition": "before",
+    "camera_type": "IriunWebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4284)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1024_USBVideo_after_roi.pt",
+    "subject_id": "1024",
+    "condition": "after",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5355)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1024_USBVideo_before_roi.pt",
+    "subject_id": "1024",
+    "condition": "before",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5375)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1035_FullHDwebcam_after_roi.pt",
+    "subject_id": "1035",
+    "condition": "after",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5384)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1035_FullHDwebcam_before_roi.pt",
+    "subject_id": "1035",
+    "condition": "before",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5352)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1035_IriunWebcam_after_roi.pt",
+    "subject_id": "1035",
+    "condition": "after",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4271)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1035_IriunWebcam_before_roi.pt",
+    "subject_id": "1035",
+    "condition": "before",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 3787)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1035_USBVideo_after_roi.pt",
+    "subject_id": "1035",
+    "condition": "after",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5364)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1035_USBVideo_before_roi.pt",
+    "subject_id": "1035",
+    "condition": "before",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5377)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1091_FullHDwebcam_after_roi.pt",
+    "subject_id": "1091",
+    "condition": "after",
+    "camera_type": "FullHDwebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5383)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1091_FullHDwebcam_before_roi.pt",
+    "subject_id": "1091",
+    "condition": "before",
+    "camera_type": "FullHDwebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5385)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1091_IriunWebcam_after_roi.pt",
+    "subject_id": "1091",
+    "condition": "after",
+    "camera_type": "IriunWebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4316)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1091_IriunWebcam_before_roi.pt",
+    "subject_id": "1091",
+    "condition": "before",
+    "camera_type": "IriunWebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4315)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1091_USBVideo_after_roi.pt",
+    "subject_id": "1091",
+    "condition": "after",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5363)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1091_USBVideo_before_roi.pt",
+    "subject_id": "1091",
+    "condition": "before",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5392)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1097_FullHDwebcam_after_roi.pt",
+    "subject_id": "1097",
+    "condition": "after",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5371)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1097_FullHDwebcam_before_roi.pt",
+    "subject_id": "1097",
+    "condition": "before",
+    "camera_type": "FullHDwebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5331)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1097_IriunWebcam_after_roi.pt",
+    "subject_id": "1097",
+    "condition": "after",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4311)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1097_IriunWebcam_before_roi.pt",
+    "subject_id": "1097",
+    "condition": "before",
+    "camera_type": "IriunWebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4259)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1097_USBVideo_after_roi.pt",
+    "subject_id": "1097",
+    "condition": "after",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5382)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1097_USBVideo_before_roi.pt",
+    "subject_id": "1097",
+    "condition": "before",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5355)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1099_FullHDwebcam_after_roi.pt",
+    "subject_id": "1099",
+    "condition": "after",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5396)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1099_FullHDwebcam_before_roi.pt",
+    "subject_id": "1099",
+    "condition": "before",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5386)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1099_IriunWebcam_after_roi.pt",
+    "subject_id": "1099",
+    "condition": "after",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4282)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1099_IriunWebcam_before_roi.pt",
+    "subject_id": "1099",
+    "condition": "before",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4268)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1099_USBVideo_after_roi.pt",
+    "subject_id": "1099",
+    "condition": "after",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5364)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1099_USBVideo_before_roi.pt",
+    "subject_id": "1099",
+    "condition": "before",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5351)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1107_FullHDwebcam_after_roi.pt",
+    "subject_id": "1107",
+    "condition": "after",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5388)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1107_FullHDwebcam_before_roi.pt",
+    "subject_id": "1107",
+    "condition": "before",
+    "camera_type": "FullHDwebcam",
+    "fps": 29.9,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5377)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1107_IriunWebcam_after_roi.pt",
+    "subject_id": "1107",
+    "condition": "after",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4314)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1107_IriunWebcam_before_roi.pt",
+    "subject_id": "1107",
+    "condition": "before",
+    "camera_type": "IriunWebcam",
+    "fps": 24.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 4307)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  },
+  {
+    "file": "C:\\Users\\VICTUS\\HemoVision\\data\\vitalscan-clinic\\MCD-rPPG\\rois_v2\\1107_USBVideo_after_roi.pt",
+    "subject_id": "1107",
+    "condition": "after",
+    "camera_type": "USBVideo",
+    "fps": 30.0,
+    "num_frames": null,
+    "face_miss_rate": null,
+    "reject_reasons": [
+      "bad_shape:(24, 5376)",
+      "missing_field:num_frames",
+      "missing_field:frames_missed_face"
+    ]
+  }
+]
