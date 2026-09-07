@@ -18,7 +18,7 @@ import argparse
 import json
 import time
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Union
 
 import cv2
 import numpy as np
@@ -353,29 +353,37 @@ class HemoVisionDemo:
 # SECTION 7: MAIN DEMO MODES
 # ============================================================
 
-def run_video_demo(video_path: str, save_plot: Optional[str] = None, save_video: Optional[str] = None):
-    """Process a video file with live opencv display."""
+def run_video_demo(video_path: Union[str, int], save_plot: Optional[str] = None, save_video: Optional[str] = None):
+    """Process a video file or live webcam with live opencv display."""
+    is_cam = isinstance(video_path, int)
+    source_name = f"Webcam (Device {video_path})" if is_cam else Path(str(video_path)).name
     print(f"\n{'='*60}")
-    print(f"HemoVision Demo — Processing: {Path(video_path).name}")
+    print(f"HemoVision Demo — Processing: {source_name}")
     print(f"{'='*60}")
 
     model = load_model()
     demo = HemoVisionDemo(model)
 
-    cap = cv2.VideoCapture(str(video_path))
+    cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
-        raise FileNotFoundError(f"Could not open video: {video_path}")
+        raise RuntimeError(f"Could not open video/webcam source: {video_path}")
 
-    demo.fps = cap.get(cv2.CAP_PROP_FPS)
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    demo.fps = fps if (fps is not None and fps > 5.0 and fps < 120.0) else 30.0
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    print(f"Video: {total_frames} frames @ {demo.fps:.1f} FPS "
-          f"({total_frames/demo.fps:.1f}s)")
+    if is_cam or total_frames <= 0:
+        total_frames = None
+        print(f"Source: {source_name} @ ~{demo.fps:.1f} FPS (Press 'q' or ESC to exit)")
+    else:
+        duration_s = total_frames / demo.fps if demo.fps > 0 else 0
+        print(f"Video: {total_frames} frames @ {demo.fps:.1f} FPS ({duration_s:.1f}s)")
 
     ret, first_frame = cap.read()
     if not ret:
-        raise ValueError("Could not read first frame")
+        raise ValueError("Could not read frame from camera/video source.")
     h_vid, w_vid, _ = first_frame.shape
-    cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
+    if not is_cam:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
     
     plot_w = max(640, w_vid)
     canvas_h = max(h_vid, 480)
@@ -459,9 +467,19 @@ def run_video_demo(video_path: str, save_plot: Optional[str] = None, save_video:
                             (w_vid + 50, 100), cv2.FONT_HERSHEY_DUPLEX, 2.5,
                             (0, 255, 0), 3)
             else:
-                cv2.putText(canvas, "Estimating...",
-                            (w_vid + 50, 100), cv2.FONT_HERSHEY_DUPLEX, 1.5,
-                            (0, 165, 255), 2)
+                buffered = len(demo.frame_buffer)
+                if buffered < WINDOW_FRAMES:
+                    pct = int(100 * buffered / WINDOW_FRAMES)
+                    cv2.putText(canvas, f"Buffering {pct}%",
+                                (w_vid + 30, 90), cv2.FONT_HERSHEY_DUPLEX, 1.3,
+                                (0, 165, 255), 2)
+                    cv2.putText(canvas, f"({buffered}/{WINDOW_FRAMES} frames)",
+                                (w_vid + 30, 130), cv2.FONT_HERSHEY_SIMPLEX, 0.7,
+                                (180, 180, 180), 1)
+                else:
+                    cv2.putText(canvas, "Estimating...",
+                                (w_vid + 50, 100), cv2.FONT_HERSHEY_DUPLEX, 1.5,
+                                (0, 165, 255), 2)
 
             # 2. Draw Waveform line plot
             if demo.bvp_history:
@@ -492,14 +510,19 @@ def run_video_demo(video_path: str, save_plot: Optional[str] = None, save_video:
                     cv2.polylines(canvas, [np.array(pts, dtype=np.int32)], False, (0, 0, 255), 2)
 
             # 3. Progress bar at bottom of video
-            cv2.putText(canvas, f"Frame {frame_idx}/{total_frames}",
-                        (20, h_vid - 40), cv2.FONT_HERSHEY_SIMPLEX, 0.6,
-                        (200, 200, 200), 1)
-            progress = frame_idx / max(total_frames, 1)
-            bar_w = w_vid - 40
-            cv2.rectangle(canvas, (20, h_vid - 20),
-                          (20 + int(bar_w * progress), h_vid - 10),
-                          (0, 255, 0), -1)
+            if total_frames is not None and total_frames > 0:
+                cv2.putText(canvas, f"Frame {frame_idx}/{total_frames}",
+                            (20, h_vid - 40), cv2.FONT_HERSHEY_SIMPLEX, 0.6,
+                            (200, 200, 200), 1)
+                progress = frame_idx / max(total_frames, 1)
+                bar_w = w_vid - 40
+                cv2.rectangle(canvas, (20, h_vid - 20),
+                              (20 + int(bar_w * progress), h_vid - 10),
+                              (0, 255, 0), -1)
+            else:
+                cv2.putText(canvas, f"Live Webcam Frame: {frame_idx} (Press 'q' to exit)",
+                            (20, h_vid - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6,
+                            (0, 255, 128), 1)
 
             cv2.imshow("HemoVision Live Demo", canvas)
             if video_writer is not None:
